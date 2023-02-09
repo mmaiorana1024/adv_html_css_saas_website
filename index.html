@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/85bae2cb2c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/default.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
@@ -15,33 +15,78 @@
   </head>
   <body>
     <div class="page-container">
-      <div class="top-section container">
-        <header>
-          <img src="./assets/project_logo/logo.svg" alt="Company Logo" />
-          <nav>
-            <ul class="nav-list">
-              <li>Home</li>
-              <li class="header-features">Features</li>
-              <li>Learn</li>
-              <li>Pricing</li>
-              <li>Hire us</li>
-            </ul>
-            <button>Buy Now</button>
-          </nav>
-        </header>
+      <section class="top-section container">
+        <div class="top-section-content">
+          <header>
+            <img src="./assets/project_logo/logo.svg" alt="Company Logo" />
+            <nav>
+              <ul class="nav-list">
+                <li>Home</li>
+                <li class="header-features">Features</li>
+                <li>Learn</li>
+                <li>Pricing</li>
+                <li>Hire us</li>
+              </ul>
+              <button>Buy Now</button>
+            </nav>
+          </header>
+          <div class="hero-section">
+            <div class="hero-card-left">
+              <div class="hero-card-left-title">
+                <h2>Empowering <br />teams with the <br />freedom</h2>
+                <h5>Own the unlimited power of the web development</h5>
+              </div>
+              <div class="hero-card-left-clickable">
+                <button class="hero-card-left-button"><i class="fa-solid fa-circle-play"></i>Play Video</button>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="hero-card-right">
+              <div class="logo-default-sm top-level-logo google-logo">
+                <img src="./assets/logo_icons/google.png" alt="google logo" />
+              </div>
+              <div class="logo-default-lg top-level-logo atlassian-logo">
+                <img src="./assets/logo_icons/atlassian.png" alt="atlassian logo" />
+              </div>
+              <div class="logo-default-lg top-level-logo asana-logo">
+                <img src="./assets/logo_icons/asana.png" alt="asana logo" />
+              </div>
+              <div class="logo-default-lg mid-level-logo paypal-logo">
+                <img src="./assets/logo_icons/paypal.jpg" alt="paypal logo" />
+              </div>
+              <div class="logo-default-lg mid-level-logo weave-logo">
+                <img src="./assets/logo_icons/weave.png" alt="weave logo" />
+              </div>
+              <div class="logo-default-sm googleAds-logo">
+                <img src="./assets/logo_icons/google-A.png" alt="googleAds logo" />
+              </div>
+              <div class="logo-default-lg calendar-logo">
+                <img src="./assets/logo_icons/calendar.png" alt="calendar logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- svg background  -->
         <div class="top-section-bg">
           <svg class="top-bg-svgs" xmlns="http://www.w3.org/2000/svg">
             <path d="M 0 0 L0 517 L 711.5 443 L 884.5 0 Z" fill="url(#vector-1)" />
             <path d="M 884.5 0 L 1023.5 0 V 410.5 L 711.5 443 Z" fill="#E1E7EF" />
             <defs>
-              <linearGradient id="vector-1" x1="40%" x2="100%" y1="40%" y2="100%">
+              <linearGradient id="vector-1" x1="30%" x2="100%" y1="30%" y2="100%">
                 <stop offset="17.61%" stop-color="rgba(217, 217, 217)" stop-opacity="0" />
                 <stop offset="55.85%" stop-color="rgba(217, 217, 217)" stop-opacity="0.44" />
               </linearGradient>
             </defs>
           </svg>
         </div>
-      </div>
+      </section>
+      <!-- Key Benefits Section -->
+      <section class="key-benefits-container container">
+        <div class="key-benefits-title">
+          <h2>Key Benefits</h2>
+          <h5>Design faster with a growing array of beautiful templates</h5>
+        </div>
+      </section>
     </div>
   </body>
 </html>

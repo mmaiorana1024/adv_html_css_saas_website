@@ -1,3 +1,7 @@
+.top-section {
+  height: 532px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -32,18 +36,19 @@ header nav ul {
 }
 
 header button {
-  padding: 15px 25px;
+  padding: var(--size-15) 25px;
   border-radius: var(--size-30);
   color: var(--white);
   background: var(--accent-color-main);
   border: 1px solid transparent;
   margin-left: var(--size-30);
   margin-right: var(--size-10);
-  font-size: 12px;
-  line-height: 15px;
+  font-size: var(--size-12);
+  line-height: var(--size-15);
 }
 
 .top-section-bg {
+  width: 100%;
   position: absolute;
   text-align: center;
   top: 0;
@@ -54,4 +59,222 @@ header button {
 .top-bg-svgs {
   width: 1023.5px;
   height: 517px;
+}
+
+/* hero section cards */
+.hero-section {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--size-40) var(--size-30) 0;
+  gap: 10px;
+}
+
+.hero-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 60px;
+  gap: 30px;
+  width: 100%;
+}
+
+.hero-card-left-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.hero-card-left-title h2 {
+  font-size: var(--size-40);
+  line-height: 48px;
+  color: var(--black);
+  margin: 0;
+}
+
+.hero-card-left-title h5 {
+  font-size: var(--size-14);
+  line-height: var(--size-17);
+  margin: 0;
+}
+
+.hero-card-left-clickable {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-card-left-button {
+  background: var(--accent-color-main);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  font-size: var(--size-12);
+}
+
+.hero-card-left-button i {
+  color: var(--white);
+  background-color: var(--accent-color-main);
+}
+
+.hero-card-left-clickable a {
+  color: var(--accent-color-main);
+  font-weight: 700;
+  font-size: var(--size-14);
+}
+
+.hero-card-right {
+  width: 100%;
+  position: relative;
+}
+
+.logo-default-sm {
+  width: var(--size-60);
+  background-color: var(--white);
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  position: absolute;
+}
+
+.logo-default-sm img {
+  width: 100%;
+  padding: 10px;
+}
+
+.logo-default-lg {
+  width: var(--size-80);
+  background-color: var(--white);
+  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  margin: auto;
+  position: absolute;
+}
+
+.logo-default-lg img {
+  width: 100%;
+  padding: 16px;
+}
+
+.google-logo {
+  left: 64px;
+}
+
+.atlassian-logo {
+  left: 175px;
+}
+
+.asana-logo {
+  left: 380px;
+}
+
+.paypal-logo {
+  left: 44px;
+}
+
+.weave-logo {
+  left: 262px;
+}
+
+.googleAds-logo {
+  animation-duration: 1s;
+  animation-name: googleAds-slideUp;
+  animation-timing-function: ease-in-out;
+  top: 290px;
+  left: 155px;
+}
+
+.calendar-logo {
+  animation-duration: 1s;
+  animation-name: calendar-slideUp;
+  animation-timing-function: ease-in-out;
+  top: 310px;
+  left: 364px;
+}
+
+.top-level-logo {
+  animation-duration: 1s;
+  animation-name: toplogo-slideUp;
+  animation-timing-function: ease-in-out;
+  top: 10px;
+}
+
+.mid-level-logo {
+  animation-duration: 1s;
+  animation-name: midlogo-slideUp;
+  animation-timing-function: ease-in-out;
+  top: 172px;
+}
+
+@keyframes toplogo-slideUp {
+  from {
+    top: 60px;
+  }
+
+  50% {
+    display: block;
+  }
+
+  to {
+    top: 10px;
+  }
+}
+
+@keyframes midlogo-slideUp {
+  from {
+    top: 222px;
+  }
+  to {
+    top: 172px;
+  }
+}
+
+@keyframes googleAds-slideUp {
+  from {
+    top: 340px;
+  }
+  to {
+    top: 290px;
+  }
+}
+
+@keyframes calendar-slideUp {
+  from {
+    top: 360px;
+  }
+  to {
+    top: 310px;
+  }
+}
+
+/* Key Benefits Section */
+.key-benefits-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 120px 0 80px;
+  gap: 60px;
+}
+
+.key-benefits-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 0; */
+  gap: 10px;
+}
+
+.key-benefits-title h2 {
+  font-size: var(--size-26);
+  font-weight: 700;
+  color: var(--black);
+  line-height: 31px;
+  margin: 0;
+}
+
+.key-benefits-title h5 {
+  margin: 0;
 }
