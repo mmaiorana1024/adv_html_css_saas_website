@@ -1,4 +1,5 @@
 .top-section {
+  max-width: 1024px;
   height: 532px;
 }
 
@@ -64,6 +65,7 @@ header button {
 /* hero section cards */
 .hero-section {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   padding: var(--size-40) var(--size-30) 0;
   gap: 10px;
@@ -73,8 +75,10 @@ header button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 0 60px;
   gap: 30px;
+  flex: 1 1 0;
+  padding: 0 0 60px;
+
   width: 100%;
 }
 
@@ -104,7 +108,7 @@ header button {
   gap: 24px;
 }
 
-.hero-card-left-button {
+.play-video-button {
   background: var(--accent-color-main);
   color: var(--white);
   display: flex;
@@ -130,6 +134,7 @@ header button {
 .hero-card-right {
   width: 100%;
   position: relative;
+  flex: 1 1 0;
 }
 
 .logo-default-sm {
@@ -277,4 +282,90 @@ header button {
 
 .key-benefits-title h5 {
   margin: 0;
+}
+
+.key-benefits-card-container {
+  display: flex;
+  padding: 10px 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.key-benefits-card-default {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--white);
+  padding: 20px;
+  flex: 1;
+}
+
+.key-benefits-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: start;
+}
+
+.key-benefits-card-info img {
+  width: 50px;
+}
+
+.key-benefits-card-info h3 {
+  color: var(--black);
+  font-weight: 700;
+}
+
+.key-benefits-card-info p {
+  font-size: 14px;
+}
+
+.key-benefits-card-info a {
+  font-size: 14px;
+  color: var(--accent-color-main);
+  font-weight: 700;
+}
+
+/* banner section */
+.banner-section {
+  padding: 0 30px 80px;
+}
+
+.banner-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #f8fafe;
+}
+
+.left-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 26px;
+  flex: 1 1 0;
+  padding: 10px 30px;
+  min-width: 375px;
+}
+
+.left-banner h3 {
+  font-size: 26px;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.right-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+  flex: 1 1 0;
+  min-width: 375px;
+  height: 470px;
 }
