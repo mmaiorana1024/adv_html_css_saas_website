@@ -566,3 +566,42 @@ header button {
   line-height: 17px;
   margin: 0;
 }
+
+/* Brands Section */
+.brands-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 80px;
+  gap: 45px;
+}
+
+.brands-title {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 10px;
+}
+
+.brands-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5f6368;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin:0;
+}
+
+.brands-list {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0 30px;
+  gap: 91px;
+  height: 59px;''
+}
+
+.brands-list img {
+  height: 40px;
+}
