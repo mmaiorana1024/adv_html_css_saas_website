@@ -3,31 +3,40 @@
   height: 532px;
 }
 
-header {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--size-10) var(--size-30);
   margin: var(--size-10) 0;
+  width: 1024px;
 }
 
-header img {
+.navbar.sticky {
+  position: fixed;
+  z-index: 100;
+  margin: 0;
+  background: white;
+  box-shadow: 0 0 5px rgb(103 119 136 / 20%);
+}
+
+.navbar img {
   width: 155px;
   margin-right: auto;
 }
 
-header nav {
+.navbar nav {
   display: flex;
   align-items: center;
 }
 
-header nav ul {
+.navbar nav ul {
   display: flex;
   align-items: center;
   gap: var(--size-20);
 }
 
-.nav-list li {
+.nav-list a li {
   font-size: var(--size-14);
   line-height: var(--size-17);
 }
@@ -36,7 +45,7 @@ header nav ul {
   color: var(--accent-color-main);
 }
 
-header button {
+.navbar button {
   padding: var(--size-15) 25px;
   border-radius: var(--size-30);
   color: var(--white);
@@ -46,6 +55,7 @@ header button {
   margin-right: var(--size-10);
   font-size: var(--size-12);
   line-height: var(--size-15);
+  cursor: pointer;
 }
 
 .top-section-bg {
@@ -120,6 +130,11 @@ header button {
   border-radius: 30px;
   border: 1px solid transparent;
   font-size: var(--size-12);
+  cursor: pointer;
+}
+
+.play-video-button .fa-circle-play {
+  color: var(--white);
 }
 
 .hero-card-left-button i {
@@ -168,92 +183,58 @@ header button {
 
 .google-logo {
   left: 64px;
+  top: 10px;
 }
 
 .atlassian-logo {
   left: 175px;
+  top: 10px;
 }
 
 .asana-logo {
   left: 380px;
+  top: 10px;
 }
 
 .paypal-logo {
   left: 44px;
+  top: 172px;
 }
 
 .weave-logo {
   left: 262px;
+  top: 172px;
 }
 
 .googleAds-logo {
-  animation-duration: 1s;
-  animation-name: googleAds-slideUp;
-  animation-timing-function: ease-in-out;
   top: 290px;
   left: 155px;
 }
 
 .calendar-logo {
-  animation-duration: 1s;
-  animation-name: calendar-slideUp;
-  animation-timing-function: ease-in-out;
   top: 310px;
   left: 364px;
 }
 
-.top-level-logo {
-  animation-duration: 1s;
-  animation-name: toplogo-slideUp;
-  animation-timing-function: ease-in-out;
-  top: 10px;
+.hero-logo-animation {
+  animation-duration: 1.5s;
+  animation-name: slideUp;
+  animation-timing-function: ease;
 }
 
-.mid-level-logo {
-  animation-duration: 1s;
-  animation-name: midlogo-slideUp;
-  animation-timing-function: ease-in-out;
-  top: 172px;
-}
-
-@keyframes toplogo-slideUp {
-  from {
-    top: 60px;
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
   }
 
   50% {
-    display: block;
+    opacity: 0.5;
   }
 
-  to {
-    top: 10px;
-  }
-}
-
-@keyframes midlogo-slideUp {
-  from {
-    top: 222px;
-  }
-  to {
-    top: 172px;
-  }
-}
-
-@keyframes googleAds-slideUp {
-  from {
-    top: 340px;
-  }
-  to {
-    top: 290px;
-  }
-}
-
-@keyframes calendar-slideUp {
-  from {
-    top: 360px;
-  }
-  to {
-    top: 310px;
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
@@ -303,6 +284,23 @@ header button {
   border: 1px solid var(--white);
   padding: 20px;
   flex: 1;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transform-origin: bottom;
+  animation-fill-mode: forwards;
+}
+
+.key-benefits-card-default:hover {
+  animation-name: hoverup;
+}
+
+@keyframes hoverup {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 .key-benefits-card-info {
@@ -478,13 +476,19 @@ header button {
   top: 172px;
   left: 447px;
   background: var(--white);
+  cursor: pointer;
 }
 
 .circle-play-video {
   background: transparent;
   border: transparent;
   text-align: center;
+}
+
+.circle-play-video .fa-play {
   font-size: 20px;
+  color: var(--black);
+  cursor: pointer;
 }
 
 .hubspot-section {
@@ -611,7 +615,6 @@ header button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   gap: 60px;
   padding: 0 0 120px;
 }
@@ -748,6 +751,15 @@ header button {
   gap: 20px;
   border: 1px solid var(--white);
   flex: 1;
+  /* animation-duration: 1.5s;
+  animation-name: slideUp;
+  animation-timing-function: ease; */
+}
+
+.pricing-card-feat.sticky .row-card-default {
+  animation-duration: 1.5s;
+  animation-name: slideUp;
+  animation-timing-function: ease;
 }
 
 .row-card-content {
@@ -1008,6 +1020,7 @@ header button {
   border-radius: 30px;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .form-checkbox {
@@ -1301,6 +1314,7 @@ header button {
   border: none;
   background: transparent;
   color: var(--black);
+  cursor: pointer;
 }
 
 .footer-bottom-copywright-container {
