@@ -672,7 +672,6 @@ header button {
 
 .plan-price {
   display: flex;
-  flex-direction: row;
   align-items: flex-end;
   padding: 0px;
   gap: 7px;
@@ -688,7 +687,6 @@ header button {
 
 .plan-period {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   padding: 0px 0px 9px;
   gap: 7px;
@@ -813,7 +811,6 @@ header button {
 /* Hire Us Section */
 .hireus-section {
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 0px;
   background: #20335b;
@@ -911,7 +908,6 @@ header button {
 
 .hireus-left-person-imgs {
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 30px;
@@ -976,7 +972,6 @@ header button {
 .select-container,
 .textarea-container {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   padding: 10px;
   gap: 10px;
@@ -1017,7 +1012,6 @@ header button {
 
 .form-checkbox {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
@@ -1058,7 +1052,6 @@ header button {
 
 .label-policy {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   padding: 0px;
   gap: 28px;
@@ -1079,4 +1072,252 @@ header button {
 
 .policy-right div {
   border: 1px dashed var(--accent-color-main);
+}
+
+/* Footer Section */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 30px 40px;
+  gap: 40px;
+}
+
+.footer-section-top-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px;
+  gap: 40px;
+}
+
+.footer-top-left-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+}
+
+.co-logo {
+  width: 100px;
+  height: 29.76px;
+}
+
+.co-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.co-contact-default {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 9px;
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px 0px 0px;
+  gap: 10px;
+}
+
+.fa-solid {
+  font-size: var(--size-12);
+  font-weight: 900;
+  line-height: var(--size-12);
+  color: var(--font-color-base);
+}
+
+.co-contact-default h4 {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.co-phone-contact h4 {
+  color: var(--accent-color-main);
+}
+
+.footer-top-right-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 49px;
+  flex-grow: 1;
+}
+
+.footer-top-right-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+}
+
+.footer-top-right-card-wrapper h3 {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--black);
+}
+
+.footer-top-right-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.footer-top-right-card-content h4 {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.tr-card-content-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 9px;
+}
+
+.tr-card-content-wrapper h5 {
+  padding: 2px 4px;
+  background: var(--accent-color-main);
+  color: white;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 3px;
+}
+
+.release-notes {
+  color: var(--accent-color-main);
+}
+
+.footer-section-divider {
+  width: 100%;
+  height: 1px;
+  background: #e6e9f2;
+}
+
+.footer-section-bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+}
+
+.footer-bottom-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 212px;
+  width: 100%;
+}
+
+.fb-header-left {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+}
+
+.fb-header-left h4 {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.header-terms {
+  color: var(--accent-color-main);
+}
+
+.fb-header-right {
+  display: flex;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 20px;
+}
+
+.icon-cards-default {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 4px;
+  gap: 10px;
+  width: 30px;
+  height: 30px;
+  background: #ecf2ff;
+  border-radius: 5px;
+}
+
+.fa-brands {
+  color: var(--font-color-base);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.icon-card-google {
+  background: var(--font-color-base);
+}
+
+.fa-google {
+  color: #ecf2ff;
+}
+
+.country-selector-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 13px;
+  gap: 20px;
+  background: #ecf2ff;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.country-selector-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+}
+
+.country-selector-wrapper select {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  border: none;
+  background: transparent;
+  color: var(--black);
+}
+
+.footer-bottom-copywright-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 21px;
+}
+.footer-bottom-copywright-container h4 {
+  font-size: var(--size-14);
+}
+.copywright-top {
+  line-height: 17px;
+}
+.copywright-bottom {
+  line-height: 22px;
+  width: 700px;
 }
