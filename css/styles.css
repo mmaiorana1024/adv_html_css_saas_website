@@ -217,7 +217,7 @@
 }
 
 .hero-logo-animation {
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-name: slideUp;
   animation-timing-function: ease;
 }
@@ -284,7 +284,7 @@
   border: 1px solid var(--white);
   padding: 20px;
   flex: 1;
-  animation-duration: 0.5s;
+  /* animation-duration: 0.5s; */
   animation-iteration-count: 1;
   transform-origin: bottom;
   animation-fill-mode: forwards;
@@ -751,13 +751,10 @@
   gap: 20px;
   border: 1px solid var(--white);
   flex: 1;
-  /* animation-duration: 1.5s;
-  animation-name: slideUp;
-  animation-timing-function: ease; */
 }
 
 .pricing-card-feat.sticky .row-card-default {
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-name: slideUp;
   animation-timing-function: ease;
 }
