@@ -18,22 +18,25 @@
     <div class="page-container">
       <div class="top-section-container container">
         <div class="top-section-content">
-          <header id="topNav" class="navbar">
+          <header id="topNav" class="navbar" aria-expanded="false">
             <div class="header-logo">
               <img src="./assets/project_logo/logo.svg" alt="Company Logo" />
             </div>
-            <nav class="nav-links">
-              <ul class="nav-list">
-                <a href="#"><li>Home</li></a>
-                <a href="#"> <li class="nav-features-link">Features</li></a>
-                <a href="#"><li>Learn</li></a>
-                <a href="#"> <li>Pricing</li> </a>
-                <a href="#"><li>Hire us</li></a>
-              </ul>
-              <div class="navbar-btn">
-                <button type="button">Buy Now</button>
-              </div>
-            </nav>
+            <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav-section-container">
+              <nav class="nav-links">
+                <ul class="nav-list">
+                  <li><a href="">Home</a></li>
+                  <li class="nav-features-link"><a href="">Features</a></li>
+                  <li><a href="">Learn</a></li>
+                  <li><a href="">Pricing</a></li>
+                  <li><a href="">Hire us</a></li>
+                </ul>
+                <div class="navbar-btn">
+                  <button type="button">Buy Now</button>
+                </div>
+              </nav>
+            </div>
           </header>
           <div class="hero-section-container container">
             <div class="hero-card-left">
@@ -74,7 +77,7 @@
           </div>
         </div>
         <div class="top-section-bg">
-          <svg class="top-bg-svgs" viewbox="0 0 1023.5 517" xmlns="http://www.w3.org/2000/svg">
+          <svg class="top-bg-svgs" width="100%" height="100%" viewBox="0 0 1023.5 517" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M 0 0 L0 517 L 707.5 443 L 884.5 0 Z" fill="url(#vector-1)" />
             <path d="M 884.5 0 L 1023.5 0 V 409.5 L 707.5 443 Z" fill="#E1E7EF" />
             <defs>
@@ -93,40 +96,45 @@
           <h2>Key Benefits</h2>
           <h5>Design faster with a growing array of beautiful templates</h5>
         </div>
+
         <div class="key-benefits-card-container">
-          <div class="key-benefits-card-default">
-            <div class="key-benefits-card-info">
-              <img src="./assets/icons/responsive.svg" alt="responsive icon" />
-              <h3>Responsive</h3>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              <a href="">Learn more</a>
-            </div>
-          </div>
-          <div class="key-benefits-card-default">
-            <div class="key-benefits-card-info">
-              <img src="./assets/icons/customizable.svg" alt="customizable icon" />
-              <h3>Customizable</h3>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              <a href="">Learn more</a>
-            </div>
-          </div>
-          <div class="key-benefits-card-default">
-            <div class="key-benefits-card-info">
-              <img src="./assets/icons/premium.svg" alt="premium icon" />
-              <div class="premium-sketch">
-                <h3>Premium</h3>
-                <div class="sketch-icon"><span>sketch</span></div>
+          <div class="key-benefits-row">
+            <div class="key-benefits-card-default">
+              <div class="key-benefits-card-info">
+                <img src="./assets/icons/responsive.svg" alt="responsive icon" />
+                <h3>Responsive</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <a href="">Learn more</a>
               </div>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              <a href="">Learn more</a>
+            </div>
+            <div class="key-benefits-card-default">
+              <div class="key-benefits-card-info">
+                <img src="./assets/icons/customizable.svg" alt="customizable icon" />
+                <h3>Customizable</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <a href="">Learn more</a>
+              </div>
             </div>
           </div>
-          <div class="key-benefits-card-default">
-            <div class="key-benefits-card-info">
-              <img src="./assets/icons/documentation.svg" alt="documentation icon" />
-              <h3>Documentation</h3>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-              <a href="">Learn more</a>
+          <div class="key-benefits-row">
+            <div class="key-benefits-card-default">
+              <div class="key-benefits-card-info">
+                <img src="./assets/icons/premium.svg" alt="premium icon" />
+                <div class="premium-sketch">
+                  <h3>Premium</h3>
+                  <div class="sketch-icon"><span>sketch</span></div>
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <a href="">Learn more</a>
+              </div>
+            </div>
+            <div class="key-benefits-card-default">
+              <div class="key-benefits-card-info">
+                <img src="./assets/icons/documentation.svg" alt="documentation icon" />
+                <h3>Documentation</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <a href="">Learn more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -158,7 +166,7 @@
             <div class="wf-card container">
               <div class="bullet-container">
                 <div class="line line-transparent"></div>
-                <svg svg class="bullet" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <svg class="bullet" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="25" cy="25" r="25" fill="#ECF2FF" />
                   <circle cx="25" cy="25" r="3" fill="#0066FF" />
                 </svg>
@@ -169,7 +177,7 @@
             <div class="wf-card container">
               <div class="bullet-container">
                 <div class="line"></div>
-                <svg svg class="bullet" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <svg class="bullet" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="25" cy="25" r="25" fill="#ECF2FF" />
                   <circle cx="25" cy="25" r="3" fill="#0066FF" />
                 </svg>
@@ -180,7 +188,7 @@
             <div class="wf-card container">
               <div class="bullet-container">
                 <div class="line"></div>
-                <svg svg class="bullet" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <svg class="bullet" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="25" cy="25" r="25" fill="#ECF2FF" />
                   <circle cx="25" cy="25" r="3" fill="#0066FF" />
                 </svg>
@@ -191,7 +199,7 @@
             <div class="wf-card container">
               <div class="bullet-container">
                 <div class="line"></div>
-                <svg svg class="bullet" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <svg class="bullet" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="25" cy="25" r="25" fill="#ECF2FF" />
                   <circle cx="25" cy="25" r="3" fill="#0066FF" />
                 </svg>
@@ -353,8 +361,8 @@
                 <input type="text" name="lastname" id="lastname" placeholder="Last Name" />
               </div>
               <div class="input-default-container">
-                <input type="text" name="firstname" id="firstname" placeholder="First Name" />
-                <input type="text" name="lastname" id="lastname" placeholder="Last Name" />
+                <input type="text" name="firstname1" id="firstname1" placeholder="First Name" />
+                <input type="text" name="lastname1" id="lastname1" placeholder="Last Name" />
               </div>
               <div class="input-default-container">
                 <div class="select-container">
@@ -381,11 +389,15 @@
                   <h3>Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</h3>
                   <div class="label-policy">
                     <div class="privacy-policy policy-left">
-                      <a href="#"><h3>View privacy policy</h3></a>
+                      <a href="">
+                        <h3>View privacy policy</h3>
+                      </a>
                       <div class="policy-border-bottom"></div>
                     </div>
                     <div class="privacy-policy policy-right">
-                      <a href="#"><h3>View privacy policy</h3></a>
+                      <a href="">
+                        <h3>View privacy policy</h3>
+                      </a>
                       <div class="policy-border-bottom"></div>
                     </div>
                   </div>
@@ -489,7 +501,7 @@
               <div class="country-selector-container">
                 <div class="country-selector-wrapper">
                   <i class="fa-solid fa-flag-usa"></i>
-                  <select name="country" id="country">
+                  <select name="contry1" id="country1">
                     <option value="usa">United States</option>
                   </select>
                 </div>
@@ -519,6 +531,16 @@
           rowCard.classList.remove("sticky");
         }
       };
+
+      const navButton = document.querySelector("button[aria-expanded]");
+
+      function toggleNav({ target }) {
+        const expanded = target.getAttribute("aria-expanded") === "true" || false;
+        navButton.setAttribute("aria-expanded", !expanded);
+        nav.setAttribute("aria-expanded", !expanded);
+      }
+
+      navButton.addEventListener("click", toggleNav);
     </script>
   </body>
 </html>
