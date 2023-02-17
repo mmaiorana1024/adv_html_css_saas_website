@@ -16,32 +16,35 @@
 
   <body>
     <div class="page-container">
-      <section class="top-section container">
+      <div class="top-section-container container">
         <div class="top-section-content">
-          <!-- top nav bar -->
-
           <header id="topNav" class="navbar">
-            <img src="./assets/project_logo/logo.svg" alt="Company Logo" />
-            <nav>
+            <div class="header-logo">
+              <img src="./assets/project_logo/logo.svg" alt="Company Logo" />
+            </div>
+            <nav class="nav-links">
               <ul class="nav-list">
                 <a href="#"><li>Home</li></a>
-                <a href="#"> <li class="header-features">Features</li></a>
+                <a href="#"> <li class="nav-features-link">Features</li></a>
                 <a href="#"><li>Learn</li></a>
                 <a href="#"> <li>Pricing</li> </a>
                 <a href="#"><li>Hire us</li></a>
               </ul>
-              <button type="button">Buy Now</button>
+              <div class="navbar-btn">
+                <button type="button">Buy Now</button>
+              </div>
             </nav>
           </header>
-          <!-- hero card and its content -->
-          <div class="hero-section container">
+          <div class="hero-section-container container">
             <div class="hero-card-left">
               <div class="hero-card-left-title">
-                <h2>Empowering <br />teams with the <br />freedom</h2>
+                <h2>Empowering teams with the freedom</h2>
                 <h5>Own the unlimited power of the web development</h5>
               </div>
               <div class="hero-card-left-clickable">
-                <button class="play-video-button"><i class="fa-solid fa-circle-play"></i>Play Video</button>
+                <div class="play-video-btn">
+                  <button><i class="fa-solid fa-circle-play"></i>Play Video</button>
+                </div>
                 <a href="#">Learn more</a>
               </div>
             </div>
@@ -70,11 +73,10 @@
             </div>
           </div>
         </div>
-        <!-- svg background  -->
         <div class="top-section-bg">
           <svg class="top-bg-svgs" viewbox="0 0 1023.5 517" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 0 0 L0 517 L 711.5 443 L 884.5 0 Z" fill="url(#vector-1)" />
-            <path d="M 884.5 0 L 1023.5 0 V 410.5 L 711.5 443 Z" fill="#E1E7EF" />
+            <path d="M 0 0 L0 517 L 707.5 443 L 884.5 0 Z" fill="url(#vector-1)" />
+            <path d="M 884.5 0 L 1023.5 0 V 409.5 L 707.5 443 Z" fill="#E1E7EF" />
             <defs>
               <linearGradient id="vector-1" x1="30%" x2="100%" y1="30%" y2="100%">
                 <stop offset="17.61%" stop-color="rgba(217, 217, 217)" stop-opacity="0" />
@@ -83,7 +85,7 @@
             </defs>
           </svg>
         </div>
-      </section>
+      </div>
 
       <!-- Key Benefits Section -->
       <section class="key-benefits-container container">
@@ -141,7 +143,7 @@
       </section>
 
       <!-- Why Font Section -->
-      <section class="why-font-section">
+      <section class="why-font-section container">
         <div class="why-font-container container">
           <div class="why-font-title">
             <h3>Why font?</h3>
