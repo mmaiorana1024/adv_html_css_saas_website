@@ -13,7 +13,7 @@
 
   [aria-expanded="true"].navbar {
     background: var(--white);
-
+    height: 86px;
     border-bottom: 1px solid rgb(103 119 136 / 20%);
   }
 
@@ -66,7 +66,7 @@
     min-width: 240px;
   }
 
-  .key-benefits-card-container {
+  /* .key-benefits-card-container {
     flex-direction: column;
     align-items: center;
   }
@@ -77,5 +77,78 @@
     align-items: flex-start;
     padding: 0px;
     gap: 30px;
+  } */
+
+  /* .banner-section {
+    height: 609px;
+  } */
+
+  .banner-content {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .left-banner {
+    align-items: center;
+    padding: 27px 30px;
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+  }
+
+  .left-banner h3 {
+    text-align: center;
+  }
+
+  .right-banner {
+    align-items: flex-end;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .hubspot-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hubspot-card-right {
+    padding: 0;
+    align-items: center;
+  }
+
+  .hubspot-title {
+    align-items: center;
+    width: 600px;
+    text-align: center;
+  }
+
+  .brands-list img {
+    height: 27px;
+  }
+
+  .pricing-card-plan {
+    max-width: unset;
+  }
+
+  .plan-header {
+    align-items: center;
+  }
+
+  .plan-footer {
+    width: 100%;
+  }
+
+  .hireus-left {
+    width: 100%;
+    flex-direction: row;
+    padding: 40px 30px 20px;
+    align-items: center;
+  }
+
+  .footer-top-right-card-wrapper {
+    min-width: 140px;
   }
 }

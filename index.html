@@ -98,43 +98,40 @@
         </div>
 
         <div class="key-benefits-card-container">
-          <div class="key-benefits-row">
-            <div class="key-benefits-card-default">
-              <div class="key-benefits-card-info">
-                <img src="./assets/icons/responsive.svg" alt="responsive icon" />
-                <h3>Responsive</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                <a href="">Learn more</a>
-              </div>
-            </div>
-            <div class="key-benefits-card-default">
-              <div class="key-benefits-card-info">
-                <img src="./assets/icons/customizable.svg" alt="customizable icon" />
-                <h3>Customizable</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                <a href="">Learn more</a>
-              </div>
+          <div class="key-benefits-card-default">
+            <div class="key-benefits-card-info">
+              <img src="./assets/icons/responsive.svg" alt="responsive icon" />
+              <h3>Responsive</h3>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <a href="">Learn more</a>
             </div>
           </div>
-          <div class="key-benefits-row">
-            <div class="key-benefits-card-default">
-              <div class="key-benefits-card-info">
-                <img src="./assets/icons/premium.svg" alt="premium icon" />
-                <div class="premium-sketch">
-                  <h3>Premium</h3>
-                  <div class="sketch-icon"><span>sketch</span></div>
-                </div>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                <a href="">Learn more</a>
-              </div>
+          <div class="key-benefits-card-default">
+            <div class="key-benefits-card-info">
+              <img src="./assets/icons/customizable.svg" alt="customizable icon" />
+              <h3>Customizable</h3>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <a href="">Learn more</a>
             </div>
-            <div class="key-benefits-card-default">
-              <div class="key-benefits-card-info">
-                <img src="./assets/icons/documentation.svg" alt="documentation icon" />
-                <h3>Documentation</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                <a href="">Learn more</a>
+          </div>
+
+          <div class="key-benefits-card-default">
+            <div class="key-benefits-card-info">
+              <img src="./assets/icons/premium.svg" alt="premium icon" />
+              <div class="premium-sketch">
+                <h3>Premium</h3>
+                <div class="sketch-icon"><span>sketch</span></div>
               </div>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <a href="">Learn more</a>
+            </div>
+          </div>
+          <div class="key-benefits-card-default">
+            <div class="key-benefits-card-info">
+              <img src="./assets/icons/documentation.svg" alt="documentation icon" />
+              <h3>Documentation</h3>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <a href="">Learn more</a>
             </div>
           </div>
         </div>
@@ -244,7 +241,7 @@
         <div class="brands-title">
           <h3>Trusted by World's Best</h3>
         </div>
-        <div class="brands-list">
+        <div class="brands-list container">
           <img src="./assets/company_logos/weebly.svg" alt="Weebly" />
           <img src="./assets/company_logos/uber.svg" alt="Uber" />
           <img src="./assets/company_logos/slack.svg" alt="Slack" />
@@ -523,13 +520,14 @@
       window.onscroll = function () {
         if (window.pageYOffset >= 700) {
           nav.classList.add("sticky");
-          if (window.pageYOffset > 2200) {
+          if (window.pageYOffset >= 2300) {
             rowCard.classList.add("sticky");
           }
         } else {
           nav.classList.remove("sticky");
           rowCard.classList.remove("sticky");
         }
+        console.log(window.scrollY);
       };
 
       const navButton = document.querySelector("button[aria-expanded]");
