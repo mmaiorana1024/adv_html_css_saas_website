@@ -66,23 +66,6 @@
     min-width: 240px;
   }
 
-  /* .key-benefits-card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .key-benefits-row {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 30px;
-  } */
-
-  /* .banner-section {
-    height: 609px;
-  } */
-
   .banner-content {
     flex-direction: column;
     width: 100%;
@@ -150,5 +133,255 @@
 
   .footer-top-right-card-wrapper {
     min-width: 140px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero-section-container {
+    padding: 40px 16px 0;
+  }
+
+  .hero-card-left {
+    min-width: unset;
+    height: unset;
+  }
+
+  .hero-card-left-title h2 {
+    font-size: 26px;
+    line-height: unset;
+  }
+
+  .hero-card-right {
+    width: 100%;
+    height: 309px;
+    min-width: unset;
+    min-height: unset;
+    flex: unset;
+  }
+
+  .google-logo {
+    top: 0;
+    left: 0;
+  }
+
+  .atlassian-logo {
+    top: 0;
+    left: 114px;
+  }
+
+  .asana-logo {
+    top: 0;
+    left: 248px;
+  }
+
+  .paypal-logo {
+    top: 99px;
+    left: 0;
+  }
+
+  .weave-logo {
+    top: 99px;
+    left: 184px;
+  }
+
+  .googleAds-logo {
+    top: 209px;
+    left: 106px;
+  }
+
+  .calendar-logo {
+    top: 219px;
+    left: 239px;
+  }
+
+  .key-benefits-container {
+    padding: 40px 0px;
+    gap: 40px;
+  }
+
+  .key-benefits-title {
+    padding: 0 16px;
+  }
+
+  .key-benefits-card-container {
+    padding: 10px 16px;
+  }
+
+  .banner-section {
+    padding: 0px 16px 30px;
+  }
+
+  .why-font-container {
+    padding: 0 0 60px;
+    gap: 40px;
+  }
+
+  .why-font-title {
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  .why-font-cards {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+  }
+
+  .wf-card {
+    flex-direction: row;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .bullet-container {
+    width: unset;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .banner-play-section {
+    padding: 0 0 20px;
+  }
+
+  .circle-play-btn {
+    top: 27.27%;
+    left: 40.22%;
+  }
+
+  .hubspot-container {
+    align-items: flex-start;
+  }
+
+  .hubspot-card-left {
+    width: 100%;
+    height: 382px;
+  }
+
+  .dots-svg {
+    max-width: unset;
+    width: 156px;
+    top: 69px;
+  }
+  .hubspot-person {
+    max-width: unset;
+    width: 278px;
+    left: 65px;
+  }
+
+  .hubspot-title {
+    width: 100%;
+  }
+
+  .hubspot-desc {
+    padding: 0 20px 0 0;
+  }
+
+  .brands-section {
+    padding: 40px 0 60px;
+  }
+
+  .brands-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pricing-section-container {
+    padding: 0 0 60px;
+  }
+
+  .pricing-section-cards {
+    padding: 0;
+  }
+
+  .pricing-card-row-default {
+    flex-wrap: wrap;
+  }
+
+  .row-card-default {
+    flex: unset;
+  }
+
+  .hireus-left {
+    flex-wrap: wrap;
+  }
+
+  .hireus-left-top-title-container {
+    width: 100%;
+  }
+
+  .hireus-left-top-title {
+    align-items: center;
+  }
+
+  .hireus-left-top-title h4 {
+    font-size: var(--size-15);
+  }
+
+  .hireus-left-top p {
+    text-align: center;
+  }
+
+  .hireus-left-bottom {
+    gap: 30px;
+  }
+
+  .input-default-container {
+    flex-wrap: wrap;
+  }
+
+  .hireus-right {
+    padding: 30px 16px;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .footer-container {
+    padding: 80px 16px 40px;
+  }
+
+  .footer-section-top-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-top-left-card {
+    width: 100%;
+    align-items: center;
+  }
+
+  .co-contact {
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-top-right-card {
+    flex-direction: column;
+  }
+
+  .footer-top-right-card-wrapper {
+    align-items: center;
+  }
+
+  .footer-top-right-card-content {
+    align-items: center;
+  }
+
+  .footer-bottom-header-container {
+    gap: 30px;
+  }
+
+  .fb-header-left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .fb-header-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-bottom-copywright-container h4 {
+    text-align: center;
   }
 }
