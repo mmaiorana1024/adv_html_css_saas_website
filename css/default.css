@@ -66,9 +66,6 @@ img {
 }
 
 .page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 0px;
   isolation: isolate;
   position: relative;
@@ -82,4 +79,19 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-c-as {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flex-r {
+  display: flex;
 }
