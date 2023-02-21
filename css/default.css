@@ -4,22 +4,33 @@
   --font-color-base: #677788;
   --accent-color-main: #2476ff;
 
+  --size-1: 0.0625rem;
+  --size-3: 0.1875rem;
+  --size-4: 0.25rem;
+  --size-5: 0.3125rem;
   --size-10: 0.625rem;
   --size-12: 0.75rem;
+  --size-13: 0.8125rem;
   --size-14: 0.875rem;
   --size-15: 0.9375rem;
   --size-16: 1rem;
   --size-17: 1.0625rem;
   --size-18: 1.125rem;
+  --size-19: 1.1875rem;
   --size-20: 1.25rem;
+  --size-22: 1.375rem;
+  --size-24: 1.5rem;
+  --size-25: 1.5625rem;
   --size-26: 1.625rem;
   --size-30: 1.875rem;
+  --size-31: 1.9375rem;
   --size-40: 2.5rem;
   --size-50: 3.125rem;
   --size-60: 3.75rem;
   --size-80: 5rem;
   --size-100: 6.25rem;
   --size-150: 9.375rem;
+  --size-375: 23.4375rem;
 
   font-size: 16px;
 }
@@ -66,9 +77,6 @@ img {
 }
 
 .page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 0px;
   isolation: isolate;
   position: relative;
@@ -82,4 +90,19 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-c-as {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flex-r {
+  display: flex;
 }
